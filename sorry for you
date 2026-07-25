@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 🤍</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#fff5f8,#ffe8f0,#fff);
+overflow:hidden;
+}
+
+.card{
+width:340px;
+padding:35px;
+background:white;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 30px rgba(255,170,190,.35);
+animation:fade 1s;
+}
+
+h1{
+color:#ff5c8d;
+margin-bottom:20px;
+}
+
+p{
+line-height:1.8;
+color:#555;
+}
+
+button{
+margin-top:25px;
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:#ff8fb3;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+#msg{
+margin-top:20px;
+font-size:18px;
+color:#ff4f86;
+font-weight:bold;
+display:none;
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>I'm Sorry... 🤍</h1>
+
+<p>
+I know I hurt you.<br><br>
+
+If I could turn back time,
+I'd choose your smile over my mistakes every single time.<br><br>
+
+I'm not perfect...
+but my apology is real.
+</p>
+
+<button onclick="showMsg()">
+Tap Me 🩷
+</button>
+
+<div id="msg">
+🥹 Will you forgive me?
+</div>
+
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>
